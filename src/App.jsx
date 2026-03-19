@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Github,
@@ -186,14 +186,33 @@ const SectionTitle = ({ eyebrow, title, description }) => (
 );
 
 export default function PortfolioWebsite() {
+    const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl">
+     <header
+  className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+    scrolled
+      ? "border-slate-200/80 bg-white/80 shadow-sm backdrop-blur-2xl"
+      : "border-slate-200/60 bg-white/60 backdrop-blur-xl"
+  }`}
+>
   <motion.div
     initial={{ y: -18, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.55, ease: "easeOut" }}
-    className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8"
+    className={`mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 transition-all duration-300 ${
+      scrolled ? "py-3" : "py-4"
+    }`}
   >
     <motion.div
       whileHover={{ scale: 1.03 }}
@@ -222,7 +241,13 @@ export default function PortfolioWebsite() {
       </motion.div>
     </motion.div>
 
-    <nav className="hidden items-center gap-2 rounded-full border border-slate-200/80 bg-white/70 px-2 py-2 shadow-sm backdrop-blur md:flex">
+    <nav
+      className={`hidden items-center gap-2 rounded-full border px-2 py-2 shadow-sm backdrop-blur md:flex transition-all duration-300 ${
+        scrolled
+          ? "border-slate-200 bg-white/85"
+          : "border-slate-200/80 bg-white/70"
+      }`}
+    >
       {[
         { href: "#about", label: "About" },
         { href: "#projects", label: "Projects" },

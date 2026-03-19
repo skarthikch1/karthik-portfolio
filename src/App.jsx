@@ -603,23 +603,7 @@ export default function PortfolioWebsite() {
           </div>
         </section>
       </main>
-
-      <section className="border-t border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Deployment</p>
-            <h3 className="mt-3 text-2xl font-bold text-slate-950">Ready to deploy on Vercel</h3>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-              Push this portfolio to GitHub, import the repository into Vercel, and deploy it as a production-ready site in minutes. Add your resume PDF to the public folder as <span className="font-semibold text-slate-900">Karthik_Resume.pdf</span> so the resume button works correctly.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3 text-sm text-slate-600">
-              <div className="rounded-full border border-slate-200 px-4 py-2">1. Push code to GitHub</div>
-              <div className="rounded-full border border-slate-200 px-4 py-2">2. Import repo into Vercel</div>
-              <div className="rounded-full border border-slate-200 px-4 py-2">3. Deploy and connect domain</div>
-            </div>
-          </div>
-        </div>
-      </section>
+>
 
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8">

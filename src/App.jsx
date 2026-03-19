@@ -189,45 +189,74 @@ export default function PortfolioWebsite() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl">
-  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-    <div className="flex items-center gap-3">
-<motion.div
-  whileHover={{ scale: 1.08, rotate: 2 }}
-  transition={{ type: "spring", stiffness: 300 }}
-  className="flex items-center gap-3 group"
->
-  <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/40 ring-1 ring-white/10 overflow-hidden">
-    
-    {/* Shine layer */}
-    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
+  <motion.div
+    initial={{ y: -18, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.55, ease: "easeOut" }}
+    className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8"
+  >
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      transition={{ type: "spring", stiffness: 260, damping: 18 }}
+      className="flex items-center gap-3"
+    >
+      <motion.div
+        whileHover={{ scale: 1.08, rotate: 2 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="flex items-center gap-3 group"
+      >
+        <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/40 ring-1 ring-white/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
+          <span className="relative z-10 tracking-wider">KC</span>
+          <div className="absolute inset-0 animate-pulse opacity-20 bg-white blur-xl" />
+        </div>
 
-    <span className="relative z-10 tracking-wider">KC</span>
+        <div>
+          <p className="text-base font-semibold text-slate-900 tracking-tight">
+            Karthik Chalamalasetty
+          </p>
+          <p className="text-xs text-slate-500 tracking-wider">
+            AI Automation Engineer
+          </p>
+        </div>
+      </motion.div>
+    </motion.div>
 
-    <div className="absolute inset-0 animate-pulse opacity-20 bg-white blur-xl" />
-  </div>
-
-  <div>
-    <p className="text-base font-semibold text-slate-900 tracking-tight">
-      Karthik Chalamalasetty
-    </p>
-    <p className="text-xs text-slate-500 tracking-wider">
-      AI Automation Engineer
-    </p>
-  </div>
-</motion.div>
-    </div>
-
-    <nav className="hidden gap-8 md:flex text-sm text-slate-600">
-      <a href="#about" className="transition hover:text-slate-950">About</a>
-      <a href="#projects" className="transition hover:text-slate-950">Projects</a>
-      <a href="#experience" className="transition hover:text-slate-950">Experience</a>
-      <a href="#contact" className="transition hover:text-slate-950">Contact</a>
+    <nav className="hidden items-center gap-2 rounded-full border border-slate-200/80 bg-white/70 px-2 py-2 shadow-sm backdrop-blur md:flex">
+      {[
+        { href: "#about", label: "About" },
+        { href: "#projects", label: "Projects" },
+        { href: "#experience", label: "Experience" },
+        { href: "#contact", label: "Contact" },
+      ].map((item, index) => (
+        <motion.a
+          key={item.href}
+          href={item.href}
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.08 * index, duration: 0.35 }}
+          whileHover={{ y: -1 }}
+          className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+        >
+          {item.label}
+        </motion.a>
+      ))}
     </nav>
 
-    <Button asChild variant="outline" className="hidden rounded-2xl md:inline-flex">
-      <a href="#contact">Let’s Talk</a>
-    </Button>
-  </div>
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.25, duration: 0.4 }}
+    >
+      <Button
+        asChild
+        variant="outline"
+        className="hidden rounded-full border-slate-200 bg-white/80 px-5 md:inline-flex"
+      >
+        <a href="#contact">Let’s Talk</a>
+      </Button>
+    </motion.div>
+  </motion.div>
 </header>
 
       <main>

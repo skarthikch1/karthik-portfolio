@@ -191,18 +191,30 @@ export default function PortfolioWebsite() {
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
     <div className="flex items-center gap-3">
-<div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/50 ring-1 ring-white/10">
-  KC
-</div>
+<motion.div
+  whileHover={{ scale: 1.08, rotate: 2 }}
+  transition={{ type: "spring", stiffness: 300 }}
+  className="flex items-center gap-3 group"
+>
+  <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/40 ring-1 ring-white/10 overflow-hidden">
+    
+    {/* Shine layer */}
+    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
 
-<div>
-  <p className="text-base font-semibold text-slate-900">
-    Karthik Chalamalasetty
-  </p>
-  <p className="text-xs text-slate-500 tracking-wide">
-    AI Automation Engineer
-  </p>
-</div>
+    <span className="relative z-10 tracking-wider">KC</span>
+
+    <div className="absolute inset-0 animate-pulse opacity-20 bg-white blur-xl" />
+  </div>
+
+  <div>
+    <p className="text-base font-semibold text-slate-900 tracking-tight">
+      Karthik Chalamalasetty
+    </p>
+    <p className="text-xs text-slate-500 tracking-wider">
+      AI Automation Engineer
+    </p>
+  </div>
+</motion.div>
     </div>
 
     <nav className="hidden gap-8 md:flex text-sm text-slate-600">

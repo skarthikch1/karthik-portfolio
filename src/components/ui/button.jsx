@@ -4,9 +4,7 @@ export function Button({
   asChild = false,
   ...props
 }) {
-  if (asChild) {
-    return children;
-  }
+  if (asChild) return children;
 
   return (
     <button className={className} {...props}>

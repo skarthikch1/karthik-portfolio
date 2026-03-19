@@ -104,7 +104,8 @@ const projects = [
   {
     icon: Orbit,
     title: "Underwater Species Detection",
-    impact: "Achieved 76.86% mAP@0.5 with YOLOv8-based detection and segmentation",
+    impact:
+      "Achieved 76.86% mAP@0.5 with YOLOv8-based detection and segmentation",
     tech: ["Python", "YOLOv8", "OpenCV", "Deep Learning"],
     problem:
       "Marine monitoring is difficult in noisy, low-visibility underwater environments.",
@@ -116,7 +117,8 @@ const projects = [
   {
     icon: Database,
     title: "Predictive Maintenance System",
-    impact: "Enabled proactive vehicle fault detection using automotive sensor data",
+    impact:
+      "Enabled proactive vehicle fault detection using automotive sensor data",
     tech: ["Python", "Pandas", "scikit-learn", "Anomaly Detection"],
     problem:
       "Vehicle faults often go undetected until they become expensive or dangerous.",
@@ -186,7 +188,7 @@ const SectionTitle = ({ eyebrow, title, description }) => (
 );
 
 export default function PortfolioWebsite() {
-    const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -197,99 +199,102 @@ export default function PortfolioWebsite() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
-     <header
-  className={`sticky top-0 z-50 border-b transition-all duration-300 ${
-    scrolled
-      ? "border-slate-200/80 bg-white/80 shadow-sm backdrop-blur-2xl"
-      : "border-slate-200/60 bg-white/60 backdrop-blur-xl"
-  }`}
->
-  <motion.div
-    initial={{ y: -18, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.55, ease: "easeOut" }}
-    className={`mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 transition-all duration-300 ${
-      scrolled ? "py-3" : "py-4"
-    }`}
-  >
-    <motion.div
-      whileHover={{ scale: 1.03 }}
-      transition={{ type: "spring", stiffness: 260, damping: 18 }}
-      className="flex items-center gap-3"
-    >
-      <motion.div
-        whileHover={{ scale: 1.08, rotate: 2 }}
-        transition={{ type: "spring", stiffness: 300 }}
-        className="flex items-center gap-3 group"
+      <header
+        className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+          scrolled
+            ? "border-slate-200/80 bg-white/80 shadow-sm backdrop-blur-2xl"
+            : "border-slate-200/60 bg-white/60 backdrop-blur-xl"
+        }`}
       >
-        <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/40 ring-1 ring-white/10 overflow-hidden">
-          <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
-          <span className="relative z-10 tracking-wider">KC</span>
-          <div className="absolute inset-0 animate-pulse opacity-20 bg-white blur-xl" />
-        </div>
-
-        <div>
-          <p className="text-base font-semibold text-slate-900 tracking-tight">
-            Karthik Chalamalasetty
-          </p>
-          <p className="text-xs text-slate-500 tracking-wider">
-            AI Automation Engineer
-          </p>
-        </div>
-      </motion.div>
-    </motion.div>
-
-    <nav
-      className={`hidden items-center gap-2 rounded-full border px-2 py-2 shadow-sm backdrop-blur md:flex transition-all duration-300 ${
-        scrolled
-          ? "border-slate-200 bg-white/85"
-          : "border-slate-200/80 bg-white/70"
-      }`}
-    >
-      {[
-        { href: "#about", label: "About" },
-        { href: "#projects", label: "Projects" },
-        { href: "#experience", label: "Experience" },
-        { href: "#contact", label: "Contact" },
-      ].map((item, index) => (
-        <motion.a
-          key={item.href}
-          href={item.href}
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.08 * index, duration: 0.35 }}
-          whileHover={{ y: -1 }}
-          className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+        <motion.div
+          initial={{ y: -18, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
+          className={`mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 transition-all duration-300 ${
+            scrolled ? "py-3" : "py-4"
+          }`}
         >
-          {item.label}
-        </motion.a>
-      ))}
-    </nav>
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            className="flex items-center gap-3"
+          >
+            <motion.div
+              whileHover={{ scale: 1.08, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="flex items-center gap-3 group"
+            >
+              <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 text-sm font-bold text-white shadow-xl shadow-slate-400/40 ring-1 ring-white/10 overflow-hidden">
+                <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
+                <span className="relative z-10 tracking-wider">KC</span>
+                <div className="absolute inset-0 animate-pulse opacity-20 bg-white blur-xl" />
+              </div>
 
-    <motion.div
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.25, duration: 0.4 }}
-    >
-      <Button
-        asChild
-        variant="outline"
-        className="hidden rounded-full border-slate-200 bg-white/80 px-5 md:inline-flex"
-      >
-        <a href="#contact">Let’s Talk</a>
-      </Button>
-    </motion.div>
-  </motion.div>
-</header>
+              <div>
+                <p className="text-base font-semibold text-slate-900 tracking-tight">
+                  Karthik Chalamalasetty
+                </p>
+                <p className="text-xs text-slate-500 tracking-wider">
+                  AI Automation Engineer
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          <nav
+            className={`hidden items-center gap-2 rounded-full border px-2 py-2 shadow-sm backdrop-blur md:flex transition-all duration-300 ${
+              scrolled
+                ? "border-slate-200 bg-white/85"
+                : "border-slate-200/80 bg-white/70"
+            }`}
+          >
+            {[
+              { href: "#about", label: "About" },
+              { href: "#projects", label: "Projects" },
+              { href: "#experience", label: "Experience" },
+              { href: "#contact", label: "Contact" },
+            ].map((item, index) => (
+              <motion.a
+                key={item.href}
+                href={item.href}
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.08 * index, duration: 0.35 }}
+                whileHover={{ y: -1 }}
+                className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+              >
+                {item.label}
+              </motion.a>
+            ))}
+          </nav>
+
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25, duration: 0.4 }}
+          >
+            <Button
+              asChild
+              variant="outline"
+              className="hidden rounded-full border-slate-200 bg-white/80 px-5 md:inline-flex"
+            >
+              <a href="#contact">Let’s Talk</a>
+            </Button>
+          </motion.div>
+        </motion.div>
+      </header>
 
       <main>
         <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
-          <div className="absolute inset-0 opacity-50 [background-image:radial-gradient(circle_at_top_right,rgba(15,23,42,0.08),transparent_22%),radial-gradient(circle_at_bottom_left,rgba(15,23,42,0.06),transparent_18%)]" />
-          <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-slate-200/40 blur-3xl" />
-          <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-slate-100 blur-3xl" />
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-slate-100" />
+            <div className="absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] [background-size:40px_40px]" />
+            <div className="absolute top-[-100px] right-[-100px] h-[400px] w-[400px] rounded-full bg-slate-300/30 blur-3xl" />
+            <div className="absolute bottom-[-100px] left-[-100px] h-[300px] w-[300px] rounded-full bg-slate-200/40 blur-3xl" />
+          </div>
 
           <div className="relative mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
             <motion.div
@@ -317,7 +322,7 @@ export default function PortfolioWebsite() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-2xl px-6 py-6 text-base shadow-lg shadow-slate-300/40"
+                  className="rounded-full bg-slate-950 px-6 py-6 text-base text-white shadow-lg shadow-slate-400/30 transition-all duration-300 hover:scale-[1.03]"
                 >
                   <a href="#projects">
                     View Projects <ArrowRight className="ml-2 h-4 w-4" />
@@ -328,7 +333,7 @@ export default function PortfolioWebsite() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="rounded-2xl bg-white/70 px-6 py-6 text-base backdrop-blur"
+                  className="rounded-full border border-slate-200 bg-white/80 px-6 py-6 text-base backdrop-blur transition-all duration-300 hover:bg-slate-50"
                 >
                   <a href="#contact">Contact Me</a>
                 </Button>
@@ -337,7 +342,7 @@ export default function PortfolioWebsite() {
                   asChild
                   variant="ghost"
                   size="lg"
-                  className="rounded-2xl px-6 py-6 text-base"
+                  className="rounded-full px-6 py-6 text-base"
                 >
                   <a href="/Karthik_Resume.pdf" target="_blank" rel="noreferrer">
                     Resume <Download className="ml-2 h-4 w-4" />
@@ -429,8 +434,7 @@ export default function PortfolioWebsite() {
 
                   <div className="mt-8 flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
                     <BadgeCheck className="h-4 w-4 text-slate-900" /> Built to
-                    communicate technical depth and business value at the same
-                    time
+                    communicate technical depth and business value at the same time
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4">
@@ -453,7 +457,16 @@ export default function PortfolioWebsite() {
           </div>
         </section>
 
-        <section id="about" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+
+        <motion.section
+          id="about"
+          className="mx-auto max-w-7xl px-6 py-24 lg:px-8"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">
             <SectionTitle
               eyebrow="About"
@@ -472,7 +485,7 @@ export default function PortfolioWebsite() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.08 }}
                   >
-                    <Card className="rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <Card className="rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
                       <CardContent className="p-6">
                         <div className="flex items-start gap-4">
                           <div className="rounded-2xl bg-slate-100 p-3">
@@ -494,7 +507,7 @@ export default function PortfolioWebsite() {
               })}
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <section className="border-y border-slate-200 bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
@@ -517,7 +530,14 @@ export default function PortfolioWebsite() {
           </div>
         </section>
 
-        <section id="projects" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+        <motion.section
+          id="projects"
+          className="mx-auto max-w-7xl px-6 py-24 lg:px-8"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <SectionTitle
             eyebrow="Selected Work"
             title="Projects presented as impact stories"
@@ -535,7 +555,7 @@ export default function PortfolioWebsite() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.06 }}
                 >
-                  <Card className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <Card className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
                     <CardContent className="p-0">
                       <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
                         <div className="border-b border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 p-8 text-white lg:border-b-0 lg:border-r">
@@ -604,8 +624,7 @@ export default function PortfolioWebsite() {
                                 <Github className="h-4 w-4" /> View Code
                               </a>
                               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600">
-                                <BadgeCheck className="h-4 w-4" /> Recruiter-ready
-                                presentation
+                                <BadgeCheck className="h-4 w-4" /> Recruiter-ready presentation
                               </div>
                             </div>
                             <div className="rounded-3xl bg-slate-50 p-5">
@@ -613,9 +632,7 @@ export default function PortfolioWebsite() {
                                 Why it stands out
                               </p>
                               <p className="mt-2 leading-7 text-slate-700">
-                                This project shows practical engineering, applied
-                                problem solving, and the ability to turn technical
-                                ideas into measurable outcomes.
+                                This project shows practical engineering, applied problem solving, and the ability to turn technical ideas into measurable outcomes.
                               </p>
                             </div>
                           </div>
@@ -627,11 +644,15 @@ export default function PortfolioWebsite() {
               );
             })}
           </div>
-        </section>
+        </motion.section>
 
-        <section
+        <motion.section
           id="experience"
           className="border-y border-slate-200 bg-slate-50"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <SectionTitle
@@ -649,7 +670,7 @@ export default function PortfolioWebsite() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: index * 0.08 }}
                 >
-                  <Card className="h-full rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <Card className="h-full rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
                     <CardContent className="p-8">
                       <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
                         {item.period}
@@ -674,9 +695,15 @@ export default function PortfolioWebsite() {
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+        <motion.section
+          className="mx-auto max-w-7xl px-6 py-24 lg:px-8"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
             <div>
               <SectionTitle
@@ -718,15 +745,21 @@ export default function PortfolioWebsite() {
                 </div>
                 <div className="mt-8 rounded-3xl bg-white/10 p-5 text-sm leading-7 text-slate-300">
                   I’m especially interested in roles across AI automation,
-                  machine learning, data science, and applied intelligent systems
-                  engineering.
+                  machine learning, data science, and applied intelligent systems engineering.
                 </div>
               </CardContent>
             </Card>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="contact" className="border-t border-slate-200 bg-slate-50">
+        <motion.section
+          id="contact"
+          className="border-t border-slate-200 bg-slate-50"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
               <div>
@@ -752,9 +785,7 @@ export default function PortfolioWebsite() {
                       <Mail className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Email</p>
-                        <p className="font-medium text-slate-900">
-                          chtakur1@gmail.com
-                        </p>
+                        <p className="font-medium text-slate-900">chtakur1@gmail.com</p>
                       </div>
                     </a>
 
@@ -765,9 +796,7 @@ export default function PortfolioWebsite() {
                       <Phone className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Phone</p>
-                        <p className="font-medium text-slate-900">
-                          +1 (734) 776-7941
-                        </p>
+                        <p className="font-medium text-slate-900">+1 (734) 776-7941</p>
                       </div>
                     </a>
 
@@ -780,9 +809,7 @@ export default function PortfolioWebsite() {
                       <Linkedin className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">LinkedIn</p>
-                        <p className="font-medium text-slate-900">
-                          karthik-chalamalasetty
-                        </p>
+                        <p className="font-medium text-slate-900">karthik-chalamalasetty</p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>
@@ -796,9 +823,7 @@ export default function PortfolioWebsite() {
                       <Github className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">GitHub</p>
-                        <p className="font-medium text-slate-900">
-                          github.com/takur2001
-                        </p>
+                        <p className="font-medium text-slate-900">github.com/takur2001</p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>
@@ -811,7 +836,7 @@ export default function PortfolioWebsite() {
               </Card>
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <footer className="border-t border-slate-200 bg-white">

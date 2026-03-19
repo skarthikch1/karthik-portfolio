@@ -192,15 +192,14 @@ export default function PortfolioWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-sm font-semibold text-white shadow-lg shadow-slate-300/40">
-              K
+              KC
             </div>
             <div>
-              <p className="text-sm font-semibold tracking-[0.3em] text-slate-500">
-                KARTHIK
+              <p className="text-sm font-semibold text-slate-800">
+                Karthik Chalamalasetty
               </p>
               <p className="text-xs text-slate-400">AI Automation Engineer</p>
             </div>
-          </div>
 
           <nav className="hidden gap-8 md:flex text-sm text-slate-600">
             <a href="#about" className="transition hover:text-slate-950">

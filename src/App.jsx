@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "./components/ui/card";
 import { Button } from "./components/ui/button";
+
 const skills = [
   "Python",
   "SQL",
@@ -77,8 +78,6 @@ const highlights = [
 ];
 
 const projects = [
-  // Replace each repo/demo link with the exact project URL when available.
-
   {
     icon: Bot,
     title: "AI Automation System",
@@ -173,9 +172,17 @@ const differentiators = [
 
 const SectionTitle = ({ eyebrow, title, description }) => (
   <div className="max-w-3xl">
-    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">{eyebrow}</p>
-    <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">{title}</h2>
-    {description ? <p className="mt-4 text-base leading-8 text-slate-600 md:text-lg">{description}</p> : null}
+    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
+      {eyebrow}
+    </p>
+    <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
+      {title}
+    </h2>
+    {description ? (
+      <p className="mt-4 text-base leading-8 text-slate-600 md:text-lg">
+        {description}
+      </p>
+    ) : null}
   </div>
 );
 
@@ -189,19 +196,33 @@ export default function PortfolioWebsite() {
               K
             </div>
             <div>
-              <p className="text-sm font-semibold tracking-[0.3em] text-slate-500">KARTHIK</p>
+              <p className="text-sm font-semibold tracking-[0.3em] text-slate-500">
+                KARTHIK
+              </p>
               <p className="text-xs text-slate-400">AI Automation Engineer</p>
             </div>
           </div>
 
           <nav className="hidden gap-8 md:flex text-sm text-slate-600">
-            <a href="#about" className="transition hover:text-slate-950">About</a>
-            <a href="#projects" className="transition hover:text-slate-950">Projects</a>
-            <a href="#experience" className="transition hover:text-slate-950">Experience</a>
-            <a href="#contact" className="transition hover:text-slate-950">Contact</a>
+            <a href="#about" className="transition hover:text-slate-950">
+              About
+            </a>
+            <a href="#projects" className="transition hover:text-slate-950">
+              Projects
+            </a>
+            <a href="#experience" className="transition hover:text-slate-950">
+              Experience
+            </a>
+            <a href="#contact" className="transition hover:text-slate-950">
+              Contact
+            </a>
           </nav>
 
-          <Button asChild variant="outline" className="hidden rounded-2xl md:inline-flex">
+          <Button
+            asChild
+            variant="outline"
+            className="hidden rounded-2xl md:inline-flex"
+          >
             <a href="#contact">Let’s Talk</a>
           </Button>
         </div>
@@ -222,27 +243,51 @@ export default function PortfolioWebsite() {
               className="flex flex-col justify-center"
             >
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-200 bg-white/85 px-4 py-2 text-sm text-slate-600 shadow-sm backdrop-blur">
-                <Sparkles className="h-4 w-4" /> Premium portfolio built to grab recruiter attention
+                <Sparkles className="h-4 w-4" /> Premium portfolio built to grab
+                recruiter attention
               </div>
 
-              <h1 className="mt-8 max-w-5xl text-5xl font-bold tracking-tight text-slate-950 md:text-7xl">
-                I build <span className="bg-gradient-to-r from-slate-950 to-slate-500 bg-clip-text text-transparent">intelligent systems</span> that make complex work feel effortless.
+              <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-tight tracking-tight text-slate-950 md:text-7xl">
+                I build{" "}
+                <span className="bg-gradient-to-r from-slate-950 to-slate-500 bg-clip-text text-transparent">
+                  intelligent systems
+                </span>{" "}
+                that make complex work feel effortless.
               </h1>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
-                Master’s graduate in Computer Science focused on AI automation, machine learning, LLM workflows, and production-minded problem solving. I design systems that reduce manual effort, improve decision-making, and turn raw information into usable outcomes.
+                Master’s graduate in Computer Science focused on AI automation,
+                machine learning, LLM workflows, and production-minded problem
+                solving. I design systems that reduce manual effort, improve
+                decision-making, and turn raw information into usable outcomes.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <Button asChild size="lg" className="rounded-2xl px-6 py-6 text-base shadow-lg shadow-slate-300/40">
+                <Button
+                  asChild
+                  size="lg"
+                  className="rounded-2xl px-6 py-6 text-base shadow-lg shadow-slate-300/40"
+                >
                   <a href="#projects">
                     View Projects <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-2xl bg-white/70 px-6 py-6 text-base backdrop-blur">
+
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="rounded-2xl bg-white/70 px-6 py-6 text-base backdrop-blur"
+                >
                   <a href="#contact">Contact Me</a>
                 </Button>
-                <Button asChild variant="ghost" size="lg" className="rounded-2xl px-6 py-6 text-base">
+
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="lg"
+                  className="rounded-2xl px-6 py-6 text-base"
+                >
                   <a href="/Karthik_Resume.pdf" target="_blank" rel="noreferrer">
                     Resume <Download className="ml-2 h-4 w-4" />
                   </a>
@@ -251,18 +296,33 @@ export default function PortfolioWebsite() {
 
               <div className="mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
                 {stats.map((item) => (
-                  <div key={item.label} className="rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm backdrop-blur">
-                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{item.label}</p>
-                    <p className="mt-3 text-3xl font-bold text-slate-950">{item.value}</p>
-                    <p className="mt-2 text-sm leading-6 text-slate-500">{item.note}</p>
+                  <div
+                    key={item.label}
+                    className="rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm backdrop-blur"
+                  >
+                    <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
+                      {item.label}
+                    </p>
+                    <p className="mt-3 text-3xl font-bold text-slate-950">
+                      {item.value}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-slate-500">
+                      {item.note}
+                    </p>
                   </div>
                 ))}
               </div>
 
               <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-slate-500">
-                <div className="flex items-center gap-2"><Database className="h-4 w-4" /> Python • SQL • ML</div>
-                <div className="flex items-center gap-2"><Bot className="h-4 w-4" /> LLM APIs • Automation</div>
-                <div className="flex items-center gap-2"><Cpu className="h-4 w-4" /> AWS • Computer Vision</div>
+                <div className="flex items-center gap-2">
+                  <Database className="h-4 w-4" /> Python • SQL • ML
+                </div>
+                <div className="flex items-center gap-2">
+                  <Bot className="h-4 w-4" /> LLM APIs • Automation
+                </div>
+                <div className="flex items-center gap-2">
+                  <Cpu className="h-4 w-4" /> AWS • Computer Vision
+                </div>
               </div>
             </motion.div>
 
@@ -272,47 +332,68 @@ export default function PortfolioWebsite() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="flex items-center"
             >
-              <Card className="w-full rounded-[2rem] border-slate-200 bg-white/85 shadow-2xl shadow-slate-200/70 backdrop-blur">
+              <Card className="w-full rounded-[2rem] border border-slate-200 bg-white/85 shadow-2xl shadow-slate-200/70 backdrop-blur">
                 <CardContent className="p-8">
                   <div className="relative flex items-start justify-between gap-4">
                     <div className="absolute right-0 top-0 hidden rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 md:block">
                       Available for full-time roles
                     </div>
                     <div>
-                      <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Featured Impact</p>
-                      <h3 className="mt-3 text-2xl font-bold text-slate-950">AI Automation System</h3>
+                      <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
+                        Featured Impact
+                      </p>
+                      <h3 className="mt-3 text-2xl font-bold text-slate-950">
+                        AI Automation System
+                      </h3>
                     </div>
-                    <div className="rounded-2xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white">60% less manual work</div>
+                    <div className="rounded-2xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white">
+                      60% less manual work
+                    </div>
                   </div>
 
                   <div className="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-5">
                     <div className="grid gap-4 text-sm text-slate-700">
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
-                        <span className="font-semibold text-slate-950">Input:</span> Unstructured data, documents, raw text
+                        <span className="font-semibold text-slate-950">
+                          Input:
+                        </span>{" "}
+                        Unstructured data, documents, raw text
                       </div>
                       <div className="flex justify-center text-slate-400">↓</div>
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
-                        <span className="font-semibold text-slate-950">Engine:</span> Python + LLM APIs + prompt workflows
+                        <span className="font-semibold text-slate-950">
+                          Engine:
+                        </span>{" "}
+                        Python + LLM APIs + prompt workflows
                       </div>
                       <div className="flex justify-center text-slate-400">↓</div>
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
-                        <span className="font-semibold text-slate-950">Output:</span> Structured reports, summaries, downstream-ready data
+                        <span className="font-semibold text-slate-950">
+                          Output:
+                        </span>{" "}
+                        Structured reports, summaries, downstream-ready data
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-8 flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
-                    <BadgeCheck className="h-4 w-4 text-slate-900" /> Built to communicate technical depth and business value at the same time
+                    <BadgeCheck className="h-4 w-4 text-slate-900" /> Built to
+                    communicate technical depth and business value at the same
+                    time
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4">
                     <div className="rounded-2xl border border-slate-200 p-4">
                       <p className="text-sm text-slate-500">Focus</p>
-                      <p className="mt-2 text-lg font-semibold text-slate-950">Automation + AI</p>
+                      <p className="mt-2 text-lg font-semibold text-slate-950">
+                        Automation + AI
+                      </p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 p-4">
                       <p className="text-sm text-slate-500">Positioning</p>
-                      <p className="mt-2 text-lg font-semibold text-slate-950">Builder mindset</p>
+                      <p className="mt-2 text-lg font-semibold text-slate-950">
+                        Builder mindset
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -340,15 +421,19 @@ export default function PortfolioWebsite() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.08 }}
                   >
-                    <Card className="rounded-3xl border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <Card className="rounded-3xl border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                       <CardContent className="p-6">
                         <div className="flex items-start gap-4">
                           <div className="rounded-2xl bg-slate-100 p-3">
                             <Icon className="h-6 w-6 text-slate-900" />
                           </div>
                           <div>
-                            <h3 className="text-xl font-semibold text-slate-950">{item.title}</h3>
-                            <p className="mt-2 leading-7 text-slate-600">{item.description}</p>
+                            <h3 className="text-xl font-semibold text-slate-950">
+                              {item.title}
+                            </h3>
+                            <p className="mt-2 leading-7 text-slate-600">
+                              {item.description}
+                            </p>
                           </div>
                         </div>
                       </CardContent>
@@ -399,7 +484,7 @@ export default function PortfolioWebsite() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.06 }}
                 >
-                  <Card className="overflow-hidden rounded-[2rem] border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <Card className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
                     <CardContent className="p-0">
                       <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
                         <div className="border-b border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 p-8 text-white lg:border-b-0 lg:border-r">
@@ -413,13 +498,20 @@ export default function PortfolioWebsite() {
                                   Case Study {String(index + 1).padStart(2, "0")}
                                 </p>
                               </div>
-                              <h3 className="mt-5 text-3xl font-bold">{project.title}</h3>
-                              <p className="mt-6 text-lg leading-8 text-slate-300">{project.impact}</p>
+                              <h3 className="mt-5 text-3xl font-bold">
+                                {project.title}
+                              </h3>
+                              <p className="mt-6 text-lg leading-8 text-slate-300">
+                                {project.impact}
+                              </p>
                             </div>
 
                             <div className="mt-8 flex flex-wrap gap-2">
                               {project.tech.map((item) => (
-                                <span key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-200">
+                                <span
+                                  key={item}
+                                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-200"
+                                >
                                   {item}
                                 </span>
                               ))}
@@ -430,12 +522,20 @@ export default function PortfolioWebsite() {
                         <div className="p-8">
                           <div className="grid gap-6">
                             <div>
-                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Problem</p>
-                              <p className="mt-2 leading-7 text-slate-700">{project.problem}</p>
+                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                                Problem
+                              </p>
+                              <p className="mt-2 leading-7 text-slate-700">
+                                {project.problem}
+                              </p>
                             </div>
                             <div>
-                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Solution</p>
-                              <p className="mt-2 leading-7 text-slate-700">{project.solution}</p>
+                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                                Solution
+                              </p>
+                              <p className="mt-2 leading-7 text-slate-700">
+                                {project.solution}
+                              </p>
                             </div>
                             <div className="flex flex-wrap items-center gap-3 pt-1">
                               <a
@@ -453,13 +553,18 @@ export default function PortfolioWebsite() {
                                 <Github className="h-4 w-4" /> View Code
                               </a>
                               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600">
-                                <BadgeCheck className="h-4 w-4" /> Recruiter-ready presentation
+                                <BadgeCheck className="h-4 w-4" /> Recruiter-ready
+                                presentation
                               </div>
                             </div>
                             <div className="rounded-3xl bg-slate-50 p-5">
-                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Why it stands out</p>
+                              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                                Why it stands out
+                              </p>
                               <p className="mt-2 leading-7 text-slate-700">
-                                This project shows practical engineering, applied problem solving, and the ability to turn technical ideas into measurable outcomes.
+                                This project shows practical engineering, applied
+                                problem solving, and the ability to turn technical
+                                ideas into measurable outcomes.
                               </p>
                             </div>
                           </div>
@@ -473,7 +578,10 @@ export default function PortfolioWebsite() {
           </div>
         </section>
 
-        <section id="experience" className="border-y border-slate-200 bg-slate-50">
+        <section
+          id="experience"
+          className="border-y border-slate-200 bg-slate-50"
+        >
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <SectionTitle
               eyebrow="Experience"
@@ -490,11 +598,17 @@ export default function PortfolioWebsite() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: index * 0.08 }}
                 >
-                  <Card className="h-full rounded-[2rem] border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <Card className="h-full rounded-[2rem] border border-slate-200 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <CardContent className="p-8">
-                      <p className="text-sm uppercase tracking-[0.2em] text-slate-500">{item.period}</p>
-                      <h3 className="mt-3 text-2xl font-bold text-slate-950">{item.role}</h3>
-                      <p className="mt-2 text-base font-medium text-slate-600">{item.company}</p>
+                      <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+                        {item.period}
+                      </p>
+                      <h3 className="mt-3 text-2xl font-bold text-slate-950">
+                        {item.role}
+                      </h3>
+                      <p className="mt-2 text-base font-medium text-slate-600">
+                        {item.company}
+                      </p>
                       <div className="mt-6 space-y-3">
                         {item.points.map((point) => (
                           <div key={point} className="flex gap-3">
@@ -522,24 +636,39 @@ export default function PortfolioWebsite() {
 
               <div className="mt-8 grid gap-4">
                 {differentiators.map((line) => (
-                  <div key={line} className="rounded-3xl border border-slate-200 p-5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow">
+                  <div
+                    key={line}
+                    className="rounded-3xl border border-slate-200 p-5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow"
+                  >
                     {line}
                   </div>
                 ))}
               </div>
             </div>
 
-            <Card className="rounded-[2rem] border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white shadow-2xl shadow-slate-200/50">
+            <Card className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white shadow-2xl shadow-slate-200/50">
               <CardContent className="p-8 md:p-10">
-                <p className="text-sm uppercase tracking-[0.25em] text-slate-400">Currently Exploring</p>
-                <h3 className="mt-4 text-3xl font-bold">The next layer of intelligent automation</h3>
+                <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
+                  Currently Exploring
+                </p>
+                <h3 className="mt-4 text-3xl font-bold">
+                  The next layer of intelligent automation
+                </h3>
                 <div className="mt-8 space-y-4 text-slate-300">
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">Claude and OpenAI-based workflow automation</div>
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">LLM evaluation and response quality analysis</div>
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">Applied ML systems for predictive and real-time decision support</div>
+                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+                    Claude and OpenAI-based workflow automation
+                  </div>
+                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+                    LLM evaluation and response quality analysis
+                  </div>
+                  <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+                    Applied ML systems for predictive and real-time decision support
+                  </div>
                 </div>
                 <div className="mt-8 rounded-3xl bg-white/10 p-5 text-sm leading-7 text-slate-300">
-                  I’m especially interested in roles across AI automation, machine learning, data science, and applied intelligent systems engineering.
+                  I’m especially interested in roles across AI automation,
+                  machine learning, data science, and applied intelligent systems
+                  engineering.
                 </div>
               </CardContent>
             </Card>
@@ -550,48 +679,75 @@ export default function PortfolioWebsite() {
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Contact</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
+                  Contact
+                </p>
                 <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
                   Let’s build something valuable.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                  I’m open to opportunities in AI automation, machine learning, data science, and intelligent systems engineering.
+                  I’m open to opportunities in AI automation, machine learning,
+                  data science, and intelligent systems engineering.
                 </p>
               </div>
 
-              <Card className="rounded-[2rem] border-slate-200 bg-white shadow-sm">
+              <Card className="rounded-[2rem] border border-slate-200 bg-white shadow-sm">
                 <CardContent className="p-8">
                   <div className="space-y-5">
-                    <a href="mailto:chtakur1@gmail.com" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50">
+                    <a
+                      href="mailto:chtakur1@gmail.com"
+                      className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                    >
                       <Mail className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Email</p>
-                        <p className="font-medium text-slate-900">chtakur1@gmail.com</p>
+                        <p className="font-medium text-slate-900">
+                          chtakur1@gmail.com
+                        </p>
                       </div>
                     </a>
 
-                    <a href="tel:+17347767941" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50">
+                    <a
+                      href="tel:+17347767941"
+                      className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                    >
                       <Phone className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Phone</p>
-                        <p className="font-medium text-slate-900">+1 (734) 776-7941</p>
+                        <p className="font-medium text-slate-900">
+                          +1 (734) 776-7941
+                        </p>
                       </div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/karthik-chalamalasetty" target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50">
+                    <a
+                      href="https://www.linkedin.com/in/karthik-chalamalasetty"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                    >
                       <Linkedin className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">LinkedIn</p>
-                        <p className="font-medium text-slate-900">karthik-chalamalasetty</p>
+                        <p className="font-medium text-slate-900">
+                          karthik-chalamalasetty
+                        </p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>
 
-                    <a href="https://github.com/takur2001" target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50">
+                    <a
+                      href="https://github.com/takur2001"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                    >
                       <Github className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">GitHub</p>
-                        <p className="font-medium text-slate-900">github.com/takur2001</p>
+                        <p className="font-medium text-slate-900">
+                          github.com/takur2001
+                        </p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>
@@ -610,15 +766,31 @@ export default function PortfolioWebsite() {
       <section className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Deployment</p>
-            <h3 className="mt-3 text-2xl font-bold text-slate-950">Ready to deploy on Vercel</h3>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Deployment
+            </p>
+            <h3 className="mt-3 text-2xl font-bold text-slate-950">
+              Ready to deploy on Netlify
+            </h3>
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-              Push this portfolio to GitHub, import the repository into Vercel, and deploy it as a production-ready site in minutes. Add your resume PDF to the public folder as <span className="font-semibold text-slate-900">Karthik_Resume.pdf</span> so the resume button works correctly.
+              Push this portfolio to GitHub, import the repository into Netlify,
+              and deploy it as a production-ready site in minutes. Add your
+              resume PDF to the public folder as{" "}
+              <span className="font-semibold text-slate-900">
+                Karthik_Resume.pdf
+              </span>{" "}
+              so the resume button works correctly.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm text-slate-600">
-              <div className="rounded-full border border-slate-200 px-4 py-2">1. Push code to GitHub</div>
-              <div className="rounded-full border border-slate-200 px-4 py-2">2. Import repo into Vercel</div>
-              <div className="rounded-full border border-slate-200 px-4 py-2">3. Deploy and connect domain</div>
+              <div className="rounded-full border border-slate-200 px-4 py-2">
+                1. Push code to GitHub
+              </div>
+              <div className="rounded-full border border-slate-200 px-4 py-2">
+                2. Import repo into Netlify
+              </div>
+              <div className="rounded-full border border-slate-200 px-4 py-2">
+                3. Deploy and connect domain
+              </div>
             </div>
           </div>
         </div>

@@ -602,12 +602,6 @@ export default function PortfolioWebsite() {
                             </div>
                             <div className="flex flex-wrap items-center gap-3 pt-1">
                               <a
-                                href={project.demo}
-                                className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
-                              >
-                                Live Demo <ChevronRight className="h-4 w-4" />
-                              </a>
-                              <a
                                 href={project.repo}
                                 target="_blank"
                                 rel="noreferrer"
@@ -615,9 +609,6 @@ export default function PortfolioWebsite() {
                               >
                                 <Github className="h-4 w-4" /> View Code
                               </a>
-                              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600">
-                                <BadgeCheck className="h-4 w-4" /> Recruiter-ready presentation
-                              </div>
                             </div>
                             <div className="rounded-3xl bg-slate-50 p-5">
                               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">

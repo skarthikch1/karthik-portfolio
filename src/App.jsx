@@ -91,7 +91,7 @@ const projects = [
     icon: Bot,
     title: "Autonomous Risk & Decision Intelligence System",
     impact:
-      "Built an end-to-end AI-driven fraud risk analysis platform for real-time workflows",
+      "Processed unstructured case data and enabled automated decision workflows at scale",
     tech: ["FastAPI", "Streamlit", "SQLite", "JWT", "LLM APIs"],
     problem:
       "Fraud and risk investigation workflows often rely on manual review of unstructured case descriptions, slowing down decisions and reducing consistency.",
@@ -298,7 +298,7 @@ export default function PortfolioWebsite() {
               <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-tight tracking-tight text-slate-950 md:text-7xl">
                 AI/ML Engineer building{" "}
                 <span className="bg-gradient-to-r from-slate-950 to-slate-500 bg-clip-text text-transparent">
-                  production-grade ML, LLM, and RAG systems
+                  production-grade ML, LLM, and RAG systems at scale
                 </span>
               </h1>
 
@@ -306,8 +306,14 @@ export default function PortfolioWebsite() {
                 AI/ML Engineer with 4+ years of experience building
                 production-grade machine learning and generative AI systems
                 across fintech and retail supply chain domains. I specialize in
-                LLM-powered applications, Retrieval-Augmented Generation,
-                semantic search, scalable pipelines, and real-time inference.
+                LLM-powered applications, Retrieval-Augmented Generation(RAG),
+                semantic search, scalable pipelines, and real-time inference systems,
+                focusing on delivering measurable improvements in accuracy, latency, 
+                and operational efficiency.
+              </p>
+              
+              <p className="mt-4 text-sm text-slate-500">
+                Focused on building real-world, production-ready AI systems with measurable impact across applications.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">

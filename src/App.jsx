@@ -25,117 +25,103 @@ import { Button } from "./components/ui/button";
 const skills = [
   "Python",
   "SQL",
-  "Machine Learning",
-  "LLM APIs",
-  "AI Automation",
-  "PyTorch",
+  "Scala",
+  "Spark",
+  "PySpark",
+  "Databricks",
+  "Kafka",
+  "Snowflake",
+  "BigQuery",
   "TensorFlow",
-  "YOLOv8",
-  "AWS",
-  "REST APIs",
-  "Pandas",
-  "scikit-learn",
+  "PyTorch",
+  "XGBoost",
+  "LightGBM",
+  "LLMs",
+  "RAG",
+  "Semantic Search",
+  "Hugging Face",
+  "MLflow",
+  "Docker",
+  "Kubernetes",
+  "Vertex AI",
+  "FastAPI",
 ];
 
 const stats = [
   {
-    value: "60%",
-    label: "Manual work reduced",
-    note: "through AI automation workflows",
+    value: "4+",
+    label: "Years Experience",
+    note: "AI/ML systems across fintech and retail supply chain",
   },
   {
-    value: "5",
-    label: "Flagship projects",
-    note: "across AI, ML, CV, and security",
+    value: "18%",
+    label: "Fraud Precision Gain",
+    note: "improved suspicious transaction detection precision",
   },
   {
-    value: "MS",
-    label: "Computer Science",
-    note: "graduated Dec 2025",
+    value: "22%",
+    label: "Manual Review Reduced",
+    note: "through generative AI dispute summarization workflows",
   },
 ];
 
 const highlights = [
   {
     icon: Workflow,
-    title: "AI Automation Systems",
+    title: "LLM and RAG Systems",
     description:
-      "Built LLM-powered workflows that transform raw, unstructured inputs into structured outputs, reports, and downstream-ready data.",
+      "Built production-grade LLM workflows, Retrieval-Augmented Generation pipelines, and embedding-based semantic search systems for fintech use cases.",
   },
   {
     icon: Brain,
-    title: "LLM Evaluation",
+    title: "Scalable ML Engineering",
     description:
-      "Designed automated evaluation pipelines to analyze model responses, detect hallucinations, and reduce manual review effort.",
+      "Developed forecasting, anomaly detection, and predictive systems using Spark, Kafka, Databricks, LightGBM, and cloud-native ML platforms.",
   },
   {
     icon: Cpu,
-    title: "Applied Machine Learning",
+    title: "MLOps and Deployment",
     description:
-      "Developed practical ML systems across computer vision, predictive maintenance, and security-focused simulations.",
+      "Deployed and monitored models using Kubernetes, MLflow, Vertex AI, Docker, and cloud services with focus on reliability, latency, and operational efficiency.",
   },
 ];
 
 const projects = [
   {
     icon: Bot,
-    title: "AI Automation System",
-    impact: "Reduced manual data processing effort by 60%",
-    tech: ["Python", "LLM APIs", "Automation Workflows", "Structured Outputs"],
+    title: "Autonomous Risk & Decision Intelligence System",
+    impact:
+      "Built an end-to-end AI-driven fraud risk analysis platform for real-time workflows",
+    tech: ["FastAPI", "Streamlit", "SQLite", "JWT", "LLM APIs"],
     problem:
-      "Teams were spending too much time manually processing and summarizing unstructured data.",
+      "Fraud and risk investigation workflows often rely on manual review of unstructured case descriptions, slowing down decisions and reducing consistency.",
     solution:
-      "Built an AI-powered automation pipeline using Python and LLM APIs to extract, summarize, and convert raw inputs into structured outputs and reports.",
-    repo: "https://github.com/takur2001",
-    demo: "#contact",
-  },
-  {
-    icon: ChartNoAxesCombined,
-    title: "LLM Response Evaluation System",
-    impact: "Improved evaluation efficiency through automated response analysis",
-    tech: ["Python", "PyTorch", "NLP", "Transformers"],
-    problem:
-      "Manual review of model responses was slow, inconsistent, and difficult to scale.",
-    solution:
-      "Created a system that processes prompts, evaluates responses, flags hallucinations, and generates structured reports for faster analysis.",
+      "Engineered a full-stack AI system that processes unstructured case descriptions, extracts entities, assigns rule-based risk scores, and generates automated decision outputs through secure FastAPI APIs and a Streamlit dashboard.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },
   {
     icon: Orbit,
-    title: "Underwater Species Detection",
+    title: "Automated Detection and Classification of Underwater Species",
     impact:
-      "Achieved 76.86% mAP@0.5 with YOLOv8-based detection and segmentation",
-    tech: ["Python", "YOLOv8", "OpenCV", "Deep Learning"],
+      "Achieved 80.82% precision and 76.86% mAP@0.5 on complex underwater datasets",
+    tech: ["Python", "YOLOv8", "Deep Learning", "OpenCV"],
     problem:
-      "Marine monitoring is difficult in noisy, low-visibility underwater environments.",
+      "Underwater environments create major visibility, lighting, and noise challenges that make species identification difficult and unreliable.",
     solution:
-      "Built a real-time detection and segmentation system with robust preprocessing, augmentation, and transfer learning for underwater species classification.",
-    repo: "https://github.com/takur2001",
-    demo: "#contact",
-  },
-  {
-    icon: Database,
-    title: "Predictive Maintenance System",
-    impact:
-      "Enabled proactive vehicle fault detection using automotive sensor data",
-    tech: ["Python", "Pandas", "scikit-learn", "Anomaly Detection"],
-    problem:
-      "Vehicle faults often go undetected until they become expensive or dangerous.",
-    solution:
-      "Developed a machine learning pipeline to analyze RPM, speed, and engine temperature data to identify abnormal patterns and predict failures early.",
+      "Built a real-time underwater object detection and segmentation system using YOLOv8, with preprocessing, augmentation, transfer learning, and feature engineering to improve robustness across difficult marine conditions.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },
   {
     icon: ShieldCheck,
-    title: "Drone Delivery Security Framework",
-    impact: "Achieved 100% simulated attack prevention with low latency overhead",
-    tech: ["Python", "Flask", "AES-256", "SHA-256"],
+    title: "Security of Drone-Based Delivery Systems",
+    impact: "Achieved 100% attack prevention with under 50 ms encryption latency",
+    tech: ["Python", "Flask", "Cryptography", "Simulation", "Data Analysis"],
     problem:
-      "Drone-based delivery systems face security risks across communication, delivery, and customer verification.",
+      "Drone delivery systems need secure communication, delivery validation, and user authentication while maintaining performance in distributed operations.",
     solution:
-      "Designed a three-layer security framework with encryption, hashing, OTP verification, and performance logging across simulated attack scenarios.",
+      "Designed a multi-layer security framework using AES-256 encryption, SHA-256 hashing, OTP-based verification, and simulated attack analysis to protect communication and strengthen resilience.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },
@@ -143,32 +129,38 @@ const projects = [
 
 const experience = [
   {
-    role: "Web Designing Intern",
-    company: "SRM University AP",
-    period: "May 2022 – May 2023",
+    role: "AI/ML Engineer",
+    company: "Glean",
+    period: "Jun 2025 – Present | Remote, USA",
     points: [
-      "Built a website for the International Relations department and improved access to key resources.",
-      "Applied data analysis to improve user interaction insights and optimize content delivery.",
-      "Worked in Agile sprints and collaborated on responsive web features for student accessibility.",
+      "Built LLM-based fraud risk classification workflows using Retrieval-Augmented Generation and prompt tuning, improving suspicious transaction detection precision by 18%.",
+      "Developed transformer-based generative pipelines using Hugging Face to automate dispute summarization, reducing manual review workload by 22%.",
+      "Implemented embedding-driven semantic search using FAISS vector indexing, enabling faster contextual retrieval across financial logs exceeding 2 million records monthly.",
+      "Deployed scalable inference services using Kubernetes orchestration to support near real-time fraud monitoring across distributed cloud-hosted applications.",
+      "Built experimentation workflows with MLflow and supported structured A/B testing of LLM outputs to improve reliability of AI-generated insights.",
+      "Developed real-time credit risk scoring pipelines using Google Vertex AI, improving risk evaluation latency by 16%.",
     ],
   },
   {
-    role: "AI & ML Intern",
-    company: "Tevatron Technologies Pvt. Ltd. (Hexnbit)",
-    period: "Jun 2021 – Jul 2021",
+    role: "ML Engineer",
+    company: "ServiceNow",
+    period: "Jan 2021 – Dec 2023 | Remote, India",
     points: [
-      "Worked on AI and machine learning concepts, workflows, and applied projects.",
-      "Developed a wine quality detection project involving preprocessing, model training, and evaluation.",
-      "Built hands-on experience with classification pipelines and analytical problem solving.",
+      "Developed demand forecasting models using PySpark and LightGBM, improving weekly inventory planning accuracy by 20%.",
+      "Built ETL pipelines using Azure Data Factory and Databricks, processing over 25 million transactional records for downstream model training.",
+      "Implemented anomaly detection models using Scikit-learn, reducing order fulfillment disruptions by 15%.",
+      "Designed batch and streaming pipelines using Apache Spark and Kafka for predictive analytics and operational decision workflows.",
+      "Built analytical data models using BigQuery, improving reporting efficiency for planning and decision-making teams by 18%.",
+      "Deployed ML models using Docker and Azure Machine Learning services, improving consistency across production forecasting and analytics use cases.",
     ],
   },
 ];
 
 const differentiators = [
-  "I build end-to-end AI workflows, not isolated notebooks.",
-  "I translate raw data into structured, usable outputs.",
-  "I focus on automation, efficiency, and real-world practicality.",
-  "I combine machine learning knowledge with implementation discipline.",
+  "I build production-grade AI and ML systems, not just demo projects.",
+  "I combine LLM workflows, RAG, and semantic search with scalable backend engineering.",
+  "I work across the full lifecycle: data pipelines, model development, deployment, and monitoring.",
+  "I focus on measurable business outcomes like precision, latency, efficiency, and operational impact.",
 ];
 
 const SectionTitle = ({ eyebrow, title, description }) => (
@@ -238,7 +230,7 @@ export default function PortfolioWebsite() {
                   Karthik Chalamalasetty
                 </p>
                 <p className="text-xs text-slate-500 tracking-wider">
-                  AI Automation Engineer
+                  AI/ML Engineer
                 </p>
               </div>
             </motion.div>
@@ -304,18 +296,18 @@ export default function PortfolioWebsite() {
               className="flex flex-col justify-center"
             >
               <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-tight tracking-tight text-slate-950 md:text-7xl">
-                I build{" "}
+                AI/ML Engineer building{" "}
                 <span className="bg-gradient-to-r from-slate-950 to-slate-500 bg-clip-text text-transparent">
-                  intelligent systems
-                </span>{" "}
-                that make complex work feel effortless.
+                  production-grade ML, LLM, and RAG systems
+                </span>
               </h1>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
-                Master’s graduate in Computer Science focused on AI automation,
-                machine learning, LLM workflows, and production-minded problem
-                solving. I design systems that reduce manual effort, improve
-                decision-making, and turn raw information into usable outcomes.
+                AI/ML Engineer with 4+ years of experience building
+                production-grade machine learning and generative AI systems
+                across fintech and retail supply chain domains. I specialize in
+                LLM-powered applications, Retrieval-Augmented Generation,
+                semantic search, scalable pipelines, and real-time inference.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -371,13 +363,13 @@ export default function PortfolioWebsite() {
 
               <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-slate-500">
                 <div className="flex items-center gap-2">
-                  <Database className="h-4 w-4" /> Python • SQL • ML
+                  <Database className="h-4 w-4" /> Python • SQL • Spark
                 </div>
                 <div className="flex items-center gap-2">
-                  <Bot className="h-4 w-4" /> LLM APIs • Automation
+                  <Bot className="h-4 w-4" /> LLMs • RAG • Semantic Search
                 </div>
                 <div className="flex items-center gap-2">
-                  <Cpu className="h-4 w-4" /> AWS • Computer Vision
+                  <Cpu className="h-4 w-4" /> Kubernetes • MLflow • Vertex AI
                 </div>
               </div>
             </motion.div>
@@ -399,11 +391,11 @@ export default function PortfolioWebsite() {
                         Featured Impact
                       </p>
                       <h3 className="mt-3 text-2xl font-bold text-slate-950">
-                        AI Automation System
+                        AI/ML Engineer
                       </h3>
                     </div>
                     <div className="rounded-2xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white">
-                      60% less manual work
+                      4+ years experience
                     </div>
                   </div>
 
@@ -411,43 +403,43 @@ export default function PortfolioWebsite() {
                     <div className="grid gap-4 text-sm text-slate-700">
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
                         <span className="font-semibold text-slate-950">
-                          Input:
+                          Domain:
                         </span>{" "}
-                        Unstructured data, documents, raw text
+                        Fintech and retail supply chain
                       </div>
                       <div className="flex justify-center text-slate-400">↓</div>
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
                         <span className="font-semibold text-slate-950">
-                          Engine:
+                          Systems:
                         </span>{" "}
-                        Python + LLM APIs + prompt workflows
+                        LLM apps, RAG, forecasting, anomaly detection
                       </div>
                       <div className="flex justify-center text-slate-400">↓</div>
                       <div className="rounded-2xl bg-white p-4 shadow-sm">
                         <span className="font-semibold text-slate-950">
-                          Output:
+                          Platform:
                         </span>{" "}
-                        Structured reports, summaries, downstream-ready data
+                        Spark, Kafka, Kubernetes, MLflow, Vertex AI
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-8 flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
                     <BadgeCheck className="h-4 w-4 text-slate-900" /> Built to
-                    communicate technical depth and business value at the same time
+                    communicate production impact and technical depth together
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4">
                     <div className="rounded-2xl border border-slate-200 p-4">
-                      <p className="text-sm text-slate-500">Focus</p>
+                      <p className="text-sm text-slate-500">Specialization</p>
                       <p className="mt-2 text-lg font-semibold text-slate-950">
-                        Automation + AI
+                        ML + GenAI
                       </p>
                     </div>
                     <div className="rounded-2xl border border-slate-200 p-4">
-                      <p className="text-sm text-slate-500">Positioning</p>
+                      <p className="text-sm text-slate-500">Approach</p>
                       <p className="mt-2 text-lg font-semibold text-slate-950">
-                        Builder mindset
+                        Production-first
                       </p>
                     </div>
                   </div>
@@ -470,8 +462,8 @@ export default function PortfolioWebsite() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">
             <SectionTitle
               eyebrow="About"
-              title="More than a student profile — this is a high-upside engineering brand."
-              description="I’m Karthik, a Computer Science graduate focused on AI automation, machine learning, and real-world systems. My work combines data, engineering, and intelligent workflows to solve practical problems across automation, evaluation, computer vision, and predictive systems."
+              title="Built for real-world AI/ML engineering"
+              description="Master of Science in Computer Science from Lawrence Technological University, focused on AI automation, machine learning, generative AI, and scalable production systems."
             />
 
             <div className="grid gap-6">
@@ -513,8 +505,8 @@ export default function PortfolioWebsite() {
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
             <SectionTitle
               eyebrow="Core Stack"
-              title="A focused stack for shipping AI systems with clarity"
-              description="I keep the stack centered on tools that help me build, automate, deploy, and evaluate intelligent applications with speed and discipline."
+              title="A focused stack for shipping AI systems at scale"
+              description="My toolkit spans data engineering, machine learning, generative AI, MLOps, and cloud deployment for production-grade systems."
             />
 
             <div className="mt-10 flex flex-wrap gap-3">
@@ -541,7 +533,7 @@ export default function PortfolioWebsite() {
           <SectionTitle
             eyebrow="Selected Work"
             title="Projects presented as impact stories"
-            description="Instead of listing coursework, I focus on what each system solved, how it was built, and why it matters."
+            description="These projects reflect my focus on AI automation, fraud decisioning, computer vision, and security-driven engineering."
           />
 
           <div className="mt-12 grid gap-8">
@@ -632,7 +624,9 @@ export default function PortfolioWebsite() {
                                 Why it stands out
                               </p>
                               <p className="mt-2 leading-7 text-slate-700">
-                                This project shows practical engineering, applied problem solving, and the ability to turn technical ideas into measurable outcomes.
+                                This project shows production-minded engineering,
+                                practical problem solving, and the ability to turn
+                                AI ideas into usable systems.
                               </p>
                             </div>
                           </div>
@@ -657,8 +651,8 @@ export default function PortfolioWebsite() {
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <SectionTitle
               eyebrow="Experience"
-              title="Foundation built through internships and hands-on work"
-              description="My experience combines web development, user-focused thinking, machine learning fundamentals, and practical delivery in collaborative environments."
+              title="Production work across fintech and supply chain"
+              description="My experience spans fraud intelligence, generative AI, semantic retrieval, forecasting, anomaly detection, and scalable ML delivery."
             />
 
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -709,7 +703,7 @@ export default function PortfolioWebsite() {
               <SectionTitle
                 eyebrow="Why Me"
                 title="What makes me valuable to a team"
-                description="I bring a builder mindset: I don’t just experiment with models — I create systems that people can use, workflows that teams can trust, and solutions that create measurable impact."
+                description="I bring a production-first mindset and focus on building AI systems that are scalable, measurable, and operationally reliable."
               />
 
               <div className="mt-8 grid gap-4">
@@ -727,25 +721,26 @@ export default function PortfolioWebsite() {
             <Card className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white shadow-2xl shadow-slate-200/50">
               <CardContent className="p-8 md:p-10">
                 <p className="text-sm uppercase tracking-[0.25em] text-slate-400">
-                  Currently Exploring
+                  Current Focus
                 </p>
                 <h3 className="mt-4 text-3xl font-bold">
-                  The next layer of intelligent automation
+                  Building reliable AI systems for production environments
                 </h3>
                 <div className="mt-8 space-y-4 text-slate-300">
                   <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
-                    Claude and OpenAI-based workflow automation
+                    LLM-powered fraud risk workflows and intelligent decision systems
                   </div>
                   <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
-                    LLM evaluation and response quality analysis
+                    Embedding-driven semantic search and Retrieval-Augmented Generation
                   </div>
                   <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
-                    Applied ML systems for predictive and real-time decision support
+                    Scalable ML pipelines with Spark, Kafka, Kubernetes, and MLflow
                   </div>
                 </div>
                 <div className="mt-8 rounded-3xl bg-white/10 p-5 text-sm leading-7 text-slate-300">
-                  I’m especially interested in roles across AI automation,
-                  machine learning, data science, and applied intelligent systems engineering.
+                  I’m especially interested in AI/ML Engineer, Applied AI,
+                  Machine Learning Engineer, and GenAI-focused roles where I can
+                  build systems that deliver measurable business impact.
                 </div>
               </CardContent>
             </Card>
@@ -770,8 +765,8 @@ export default function PortfolioWebsite() {
                   Let’s build something valuable.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                  I’m open to opportunities in AI automation, machine learning,
-                  data science, and intelligent systems engineering.
+                  I’m open to opportunities in AI/ML engineering, generative AI,
+                  machine learning systems, and production-scale intelligent platforms.
                 </p>
               </div>
 
@@ -785,7 +780,9 @@ export default function PortfolioWebsite() {
                       <Mail className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Email</p>
-                        <p className="font-medium text-slate-900">chtakur1@gmail.com</p>
+                        <p className="font-medium text-slate-900">
+                          karthik@myjobsmail.com
+                        </p>
                       </div>
                     </a>
 
@@ -796,7 +793,9 @@ export default function PortfolioWebsite() {
                       <Phone className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">Phone</p>
-                        <p className="font-medium text-slate-900">+1 (734) 776-7941</p>
+                        <p className="font-medium text-slate-900">
+                          +1 (734) 776-7941
+                        </p>
                       </div>
                     </a>
 
@@ -809,7 +808,9 @@ export default function PortfolioWebsite() {
                       <Linkedin className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">LinkedIn</p>
-                        <p className="font-medium text-slate-900">karthik-chalamalasetty</p>
+                        <p className="font-medium text-slate-900">
+                          karthik-chalamalasetty
+                        </p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>
@@ -823,7 +824,9 @@ export default function PortfolioWebsite() {
                       <Github className="h-5 w-5 text-slate-700" />
                       <div>
                         <p className="text-sm text-slate-500">GitHub</p>
-                        <p className="font-medium text-slate-900">github.com/takur2001</p>
+                        <p className="font-medium text-slate-900">
+                          github.com/takur2001
+                        </p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-400" />
                     </a>

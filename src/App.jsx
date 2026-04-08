@@ -97,6 +97,8 @@ const projects = [
       "Fraud and risk investigation workflows often rely on manual review of unstructured case descriptions, slowing down decisions and reducing consistency.",
     solution:
       "Engineered a full-stack AI system that processes unstructured case descriptions, extracts entities, assigns rule-based risk scores, and generates automated decision outputs through secure FastAPI APIs and a Streamlit dashboard.",
+    standout:
+      "Demonstrates end-to-end AI system design using LLMs, APIs, and real-time decision workflows for practical fraud risk analysis.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },
@@ -110,6 +112,8 @@ const projects = [
       "Underwater environments create major visibility, lighting, and noise challenges that make species identification difficult and unreliable.",
     solution:
       "Built a real-time underwater object detection and segmentation system using YOLOv8, with preprocessing, augmentation, transfer learning, and feature engineering to improve robustness across difficult marine conditions.",
+    standout:
+      "Highlights strong computer vision expertise by solving real-world challenges like low visibility, noise, and complex underwater environments.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },
@@ -122,6 +126,8 @@ const projects = [
       "Drone delivery systems need secure communication, delivery validation, and user authentication while maintaining performance in distributed operations.",
     solution:
       "Designed a multi-layer security framework using AES-256 encryption, SHA-256 hashing, OTP-based verification, and simulated attack analysis to protect communication and strengthen resilience.",
+    standout:
+      "Showcases secure system design using encryption, authentication, and attack simulation to ensure reliability in distributed systems.",
     repo: "https://github.com/takur2001",
     demo: "#contact",
   },

@@ -91,7 +91,7 @@ const projects = [
     icon: Bot,
     title: "Autonomous Risk & Decision Intelligence System",
     impact:
-      "Processed unstructured case data and enabled automated decision workflows at scale",
+      "Built an end-to-end AI system that automates fraud risk analysis, reducing manual decision effort and enabling scalable real-time workflows",
     tech: ["FastAPI", "Streamlit", "SQLite", "JWT", "LLM APIs"],
     problem:
       "Fraud and risk investigation workflows often rely on manual review of unstructured case descriptions, slowing down decisions and reducing consistency.",
@@ -119,7 +119,7 @@ const projects = [
   },
   {
     icon: ShieldCheck,
-    title: "Security of Drone-Based Delivery Systems",
+    title: "Secure Drone Delivery System (Encryption & Threat Simulation)",
     impact: "Achieved 100% attack prevention with under 50 ms encryption latency",
     tech: ["Python", "Flask", "Cryptography", "Simulation", "Data Analysis"],
     problem:

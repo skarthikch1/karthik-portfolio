@@ -627,9 +627,7 @@ export default function PortfolioWebsite() {
                                 Why it stands out
                               </p>
                               <p className="mt-2 leading-7 text-slate-700">
-                                This project shows production-minded engineering,
-                                practical problem solving, and the ability to turn
-                                AI ideas into usable systems.
+                                {project.standout}
                               </p>
                             </div>
                           </div>

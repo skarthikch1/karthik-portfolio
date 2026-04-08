@@ -49,19 +49,19 @@ const skills = [
 
 const stats = [
   {
-    value: "4+",
-    label: "Years Experience",
-    note: "AI/ML systems across fintech and retail supply chain",
-  },
-  {
     value: "18%",
-    label: "Fraud Precision Gain",
-    note: "improved suspicious transaction detection precision",
+    label: "Fraud Detection Precision Gain",
+    note: "LLM + RAG-based classification systems",
   },
   {
     value: "22%",
     label: "Manual Review Reduced",
-    note: "through generative AI dispute summarization workflows",
+    note: "Generative AI dispute summarization",
+  },
+  {
+    value: "16%",
+    label: "Latency Improvement",
+    note: "Real-time risk scoring pipelines",
   },
 ];
 

@@ -30,8 +30,8 @@ const CONTACT = {
   email: "skarthikch1@gmail.com",
   phone: "+1 (248) 780-9904",
   phoneHref: "tel:+12487809904",
-  linkedin: "https://www.linkedin.com/in/karthik-chalamalasetty",
-  github: "https://github.com/takur2001",
+  linkedin: "https://www.linkedin.com/in/sai-karthik-chalamalasetty/",
+  github: "https://github.com/skarthikch1",
   resume: "/Karthik_Resume.pdf",
 };
 

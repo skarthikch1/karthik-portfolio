@@ -1021,7 +1021,7 @@ function App() {
                       <div>
                         <p className="text-xs text-slate-600">LinkedIn</p>
                         <p className="text-sm font-medium text-slate-200">
-                          karthik-chalamalasetty
+                          sai-karthik-chalamalasetty/
                         </p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-700 group-hover:text-violet-300" />
@@ -1038,7 +1038,7 @@ function App() {
                       </div>
                       <div>
                         <p className="text-xs text-slate-600">GitHub</p>
-                        <p className="text-sm font-medium text-slate-200">github.com/takur2001</p>
+                        <p className="text-sm font-medium text-slate-200">github.com/skarthikch1</p>
                       </div>
                       <ExternalLink className="ml-auto h-4 w-4 text-slate-700 group-hover:text-violet-300" />
                     </a>
